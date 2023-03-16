@@ -59,12 +59,12 @@ cod = {
 
 def coding_morse(word):
     coding_text = ""
-    word = sys.argv[1]
     for letter in word:
         if letter == " ":
             coding_text += ' '
         else:
             coding_text += cod[letter.upper()] + ' '
-        print(coding_morse)
+    print(coding_text)
     return
     
+coding_morse(sys.argv[1])
